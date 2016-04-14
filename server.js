@@ -5,9 +5,9 @@ var port = process.env.PORT || 3001
 
 app.get('/', function (req, res) {
   console.log("hit it, yo!");
-  res.send('Hello You handsome devil, you!');
+  res.send('Hello You handsome devil, you! ' + Date.now());
 });
 
 app.listen(port, function () {
-  console.log('Example app listening on port' + port);
+  console.log('Example app listening on port ' + port);
 });
