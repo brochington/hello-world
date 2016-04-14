@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 3001
 
 app.get('/', function (req, res) {
   console.log("hit it, yo!");
@@ -9,5 +9,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(port, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('Example app listening on port' + port);
 });
